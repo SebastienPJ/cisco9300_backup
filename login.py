@@ -1,5 +1,4 @@
 import validate
-import time
 
 def loginSwitch(tn_session, hostnme, username, passwrd, server_ip, port):
     print(f'Logging into {hostnme}')

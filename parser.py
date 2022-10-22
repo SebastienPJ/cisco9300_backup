@@ -69,7 +69,7 @@ def createStackArray(rawDataArray, startPoint, endPoint, linesUntilDataStart):
     dataOnlyArray = cleanup.removeCommasQuotesColons(unprocessedDataOnlyArray)
 
     '''StackArr template [[modules], [power-supply], [DAC cables], [Uplink Modules]]'''
-    stackArr = [[],[],[], []]
+    stackArr = [[],[],[],[]]
 
 
     

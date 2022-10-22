@@ -1,4 +1,3 @@
-import time
 
 def saveCurrentScreen(session, server_IP, port_number):
     session.write(b'\r\n')

@@ -1,7 +1,6 @@
 import os
 import parser
 import create_sheets
-# import object
 import pandas as pd
 from openpyxl import load_workbook
 
