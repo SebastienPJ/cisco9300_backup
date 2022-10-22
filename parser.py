@@ -1,4 +1,3 @@
-from inspect import stack
 import cleanup
 
 
@@ -68,7 +67,7 @@ def createStackArray(rawDataArray, startPoint, endPoint, linesUntilDataStart):
     unprocessedDataOnlyArray = createDataOnlyArray(desiredArray, linesUntilDataStart)
     dataOnlyArray = cleanup.removeCommasQuotesColons(unprocessedDataOnlyArray)
 
-    '''StackArr template [[modules], [power-supply], [DAC cables], [Uplink Modules]]'''
+    '''StackArr output template [[modules], [power-supply], [DAC cables], [Uplink Modules]]'''
     stackArr = [[],[],[],[]]
 
 

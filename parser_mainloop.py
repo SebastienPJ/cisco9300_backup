@@ -1,8 +1,6 @@
-import os
 import parser
 import create_sheets
-import pandas as pd
-from openpyxl import load_workbook
+
 
 
 def parseConfigFile(filepath):
@@ -12,8 +10,9 @@ def parseConfigFile(filepath):
     sheetPath = f'ExcelSheetOutputs/{hostname}.xlsx'
 
 
-    """INVENTORY DATA"""
-    dataBeginPoint = [f'{hostname}#', 'show', 'inventory']
+    '''StackArr output template [[modules], [power-supply], [DAC cables], [Uplink Modules]]'''
+
+    dataBeginPoint = [f'{hostname}#', 'show', 'inventory'] # Will match the 'show inventory' portion of the backup config
     dataEndPoint = [f'{hostname}#', '!!!!!!!!!!']
     dataLinesUntilActualDataStart = 1
 
