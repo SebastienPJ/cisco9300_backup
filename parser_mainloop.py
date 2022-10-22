@@ -29,31 +29,4 @@ def parseConfigFile(filepath):
         create_sheets.createUplinkModuleSheet(stackArray, sheetPath)
 
 
-    # """""SFP"""
-    # SfpBeginPoint = ['Port', 'Type', 'Product', 'Serial', 'Part']
-    # SfpEndPoint =  f'{hostname}#'
-    # SfpLinesUntilActualDataStart = 3 
-
-  
-
-    # sfpData = create_sheets.createSfpSheet(unfilteredArray, SfpBeginPoint, SfpEndPoint, SfpLinesUntilActualDataStart, sheetPath)  
-
-
-
-    # # os.system(f'start EXCEL.EXE {sheetName}')
-    # # switchStackObj = object.generateStackObject(sfpData, membersData, powerSupplyData)
-    # # print(switchStackObj['member1']['device'])
-    # # print(switchStackObj)
-
-
-
-    # # if 'StackObj' in book.sheetnames:
-    # #     book.remove(book['StackObj'])
-
-
-    # # df = pd.DataFrame(switchStackObj)
-    # # df.to_excel(writer, sheet_name='StackObj')
-
-    # # print(sfpData)
-
 
