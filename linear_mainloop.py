@@ -3,6 +3,7 @@ import login
 import time
 import cleanup
 import pandas as pd
+import parser_mainloop
 
 begin = time.perf_counter()
 
@@ -58,6 +59,7 @@ for data_row in range(len(df_inputs)):
 
 
     createBackup(HOSTNAME, USRNAME, PASSWORD, SAVED_SCREEN, CONSOLE_SERVER, PORT)
+    parser_mainloop.parseConfigFile(f'BackupOutput/{HOSTNAME}_Staged.txt')
 
 
 end = time.perf_counter()
